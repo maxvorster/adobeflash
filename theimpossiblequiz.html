@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Impossible Quiz</title>
+  <title>Play Flash Game</title>
   <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  <style>
+    body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    #flash-container { width: 100%; max-width: 800px; height: 600px; }
+  </style>
 </head>
 <body>
   <div id="flash-container"></div>
@@ -13,7 +17,7 @@
       const ruffle = window.RufflePlayer.newest();
       const player = ruffle.createPlayer();
       document.getElementById("flash-container").appendChild(player);
-      player.load("https://maxvorster.github.io/The Impossible Quiz.swf");
+      player.load("https://maxvorster.github.io/adobeflash/The Impossible Quiz.swf");
     });
   </script>
 </body>
