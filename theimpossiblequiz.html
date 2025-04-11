@@ -5,8 +5,24 @@
   <title>Play Flash Game</title>
   <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   <style>
-    body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; }
-    #flash-container { width: 100%; max-width: 800px; height: 600px; }
+    /* Remove all unnecessary page layout */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+    }
+
+    /* Style the container of the flash game */
+    #flash-container {
+      width: 100%;
+      max-width: 800px; /* Or any size that fits */
+      height: 600px;    /* Set height to match the game’s size */
+    }
   </style>
 </head>
 <body>
